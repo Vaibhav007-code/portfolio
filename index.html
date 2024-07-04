@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Pathak - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Add this line -->
+</head>
+<body>
+    <div class="background-3d"></div>
+    <header>
+        <!-- Removed navigation items -->
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div id="3d-container"></div> <!-- Add this line -->
+            <h1 class="animated-intro neon-text" id="animated-name">I'm Vaibhav Pathak</h1>
+            <p>"Hello, I'm Vaibhav—an avid coder, freelance enthusiast, and podcast host. I thrive on exploring new ideas and technologies, constantly pushing boundaries to uncover innovative solutions. With each project, I see myself edging closer to a greater purpose. Join me on this journey of creation and discovery, where every line of code is a step towards achieving something extraordinary."</p>
+            <button id="aboutMeBtn" class="animated-button popup-button" data-popup-id="aboutMeModal">About Me</button>
+            <button id="contactMeBtn" class="animated-button popup-button" data-popup-id="contactMeModal">Contact Me</button>
+        </div>
+    </section>
+    <section class="skills-section dark-theme">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-block animated-skill">
+                <h3>C++</h3>
+                <button class="know-more c-plus-plus popup-button" data-popup-id="knowMoreModal" data-text="Proficient Coding Skills: Completed a 100-day code challenge on CodeChef, demonstrating consistency and expertise in problem-solving and algorithmic thinking.">Know More</button>
+            </div>
+            <div class="skill-block animated-skill">
+                <h3>Python</h3>
+                <button class="know-more python popup-button" data-popup-id="knowMoreModal" data-text="Python Expertise: Acquired proficiency in Python through Harvard University's CS50 course, equipping me with strong foundational knowledge in programming.">Know More</button>
+            </div>
+            <div class="skill-block animated-skill">
+                <h3>Podcaster</h3>
+                <button class="know-more podcaster popup-button" data-popup-id="knowMoreModal" data-text="Host of 'KNOW WITH VAIBHAV' on Spotify, where I engage audiences with insightful discussions on diverse topics, showcasing my communication and storytelling abilities.">Know More</button>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card animated-project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project-card animated-project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <div class="project-card animated-project">
+                <h3>Project 3</h3>
+                <p>Description of Project 3</p>
+            </div>
+        </div>
+    </section>
+    <section class="why-hire-me-section dramatic">
+        <h2>Why You Should Hire Me</h2>
+        <ul>
+            <li>Expertise in Coding:  With a deep passion for coding, I bring extensive knowledge and skill in developing robust solutions tailored to diverse needs.</li>
+            <li>Effective Communication:  I excel in clear and concise communication, ensuring smooth collaboration with clients and teams to achieve project goals efficiently.</li>
+            <li>Love for Challenges:  I eagerly embrace challenges as opportunities for growth, consistently seeking innovative ways to overcome obstacles and exceed expectations.</li>
+            <li>Confidence and Commitment:  I approach every task with unwavering confidence and dedication, fueled by the belief that passion and persistence lead to exceptional outcomes.</li>
+        </ul>
+    </section>
+    <section class="services-section dark-theme">
+        <h2>Services I Provide</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Programming</h3>
+                <p> Harnessing my expertise in programming languages and frameworks, I develop tailored solutions that streamline processes and enhance functionality.</p>
+            </div>
+            <div class="service">
+                <h3>Video Editing</h3>
+                <p>With a keen eye for detail and storytelling, I transform raw footage into compelling narratives..</p>
+            </div>
+            <div class="service">
+                <h3>Voice Over</h3>
+                <p> Leveraging a versatile vocal range and expressive delivery, I provide professional voiceover services for commercials, narrations, tutorials, and more..</p>
+            </div>
+        </div>
+    </section>
+    <section class="achievements-section dark-theme">
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <img src="C:\Users\Vaibhav Pathak\OneDrive\Pictures\Screenshots\Screenshot 2024-06-27 202446.png" alt="Achievement 1">
+            </div>
+            <div class="achievement">
+                <img src="C:\Users\Vaibhav Pathak\OneDrive\Pictures\Screenshots\Screenshot 2024-06-27 202505.png" alt="Achievement 2">
+            </div>
+            <div class="achievement">
+                <img src="C:\Users\Vaibhav Pathak\OneDrive\Pictures\Screenshots\Screenshot 2024-06-27 202413.png" alt="Achievement 3">
+            </div>
+        </div>
+    </section>
+    <section class="work-together-section">
+        <h2>Let's Work Together</h2>
+        <a href="https://www.linkedin.com/in/vaibhav-pathak-8b8991214/" target="_blank" class="animated-linkedin-button">Connect on LinkedIn</a>
+        <a href="https://open.spotify.com/show/50pBETQfYMLg73z4TaPCMT?si=8hmv-SCyQMOaQXNKIneKkg&utm_source=copy-link" target="_blank" class="animated-podcast-button">Listen to My Podcast</a>
+    </section>
+    <footer>
+        <div class="footer-content">
+              <p>Email me at - pathakvaibhav755@gmail.com</p>
+            <p>2024 Vaibhav's Portfolio. All rights reserved.</p>
+          
+        </div>
+    </footer>
+    <div id="aboutMeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+Hey there! Vaibhav here, in the zone.
+I'm a full-time tech enthusiast, currently elbow-deep in code (this website being one of my many projects!). When I'm not hacking away at the next big thing, you'll probably find me on the cricket ground, bat in hand.
+
+This website is a glimpse into my world - Stick around and see what we can create together!.</p>
+        </div>
+    </div>
+    <div id="contactMeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="knowMoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="knowMoreText">Here is some more information.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

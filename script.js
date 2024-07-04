@@ -24,9 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle close button clicks
     closeButtons.forEach(button => {
         button.addEventListener('click', () => {
-            modals.forEach(modal => {
+            const modal = button.closest('.modal');
+            if (modal) {
                 modal.style.display = 'none';
-            });
+            }
         });
     });
 

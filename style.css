@@ -1,0 +1,467 @@
+Sure, I'll continue generating the CSS code starting from where it left off.
+
+```css
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', open sans;
+    background: #1B1B1D;
+    color: #FFEBD2;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e); /* Updated to dark gradient background */
+    color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.animated-intro {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    background: #ADBC9F;
+    padding: 50px 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.skills-section .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-section .skill-block {
+    background: #79081c;
+    color: #F4F4F8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.know-more {
+    background-color: #FFCA01;
+    color: #FFFFFF;
+}
+
+.know-more:hover {
+    background-color: #FF9900;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 0;
+    background: #FAF9F6;
+    color: #000000;
+}
+
+.projects-section h2 {
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #100E34;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes projectFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-project {
+    animation: projectFloat 3s ease-in-out infinite;
+}
+
+/* Why Hire Me Section */
+.why-hire-me-section {
+    padding: 50px 0;
+    background: #06373A;
+    color: #CCCCCC;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.why-hire-me-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-hire-me-section li {
+    font-size: 1.2em;
+    margin: 20px 0; /* Increased spacing between points */
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 0;
+    background: #1B1B1D;
+}
+
+.services-section h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: #262626;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 50px 0;
+    background: #1B1B1D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.achievements-section h2 {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement {
+    background: #262626;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Work Together Section */
+.work-together-section {
+    padding: 50px 0;
+    background: #1D1A39;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.work-together-section h2 {
+    margin-bottom: 20px;
+}
+
+.animated-linkedin-button, .animated-podcast-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #0077B5; /* LinkedIn */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-linkedin-button:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+}
+
+.animated-podcast-button {
+    background-color: #1DB954; /* Spotify */
+}
+
+.animated-podcast-button:hover {
+    background-color: #1AA34A;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background: #1B1B1D;
+    padding: 20px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #1D1E22;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    position: relative;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* 3D Background Section */
+.background-3d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#3d-container {
+    width: 100%;
+    height: 100%;
+}
+
+.neon-text {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 40px #FF1177, 0 0 55px #FF1177, 0 0 75px #FF1177;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FF1177, 0 0 30px #FF1177, 0 0 40px #FF1177, 0 0 55px #FF1177, 0 0 75px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 60px #FF1177, 0 0 75px #FF1177, 0 0 100px #FF1177;
+    }
+}
+
+/* Button Animations */
+.animated-button {
+    animation: buttonPulse 2s infinite;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Popup Button Styles */
+.popup-button {
+    background-color: #FFCA01;
+    color: #FFFFFF;
+}
+
+.popup-button:hover {
+    background-color: #FF9900;
+}
+
+/* Adding Custom Styling for New Elements */
+#animated-name {
+    animation: fadeInAndScale 3s ease-in-out infinite;
+}
+
+@keyframes fadeInAndScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+
+

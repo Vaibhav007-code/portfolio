@@ -1,148 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Pathak - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Pathak - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <div class="background-3d"></div>
-    <header></header>
-    <section class="hero">
-        <div class="container">
-            <div id="3d-container"></div>
-            <h1 class="animated-intro neon-text" id="animated-name">I'm Vaibhav Pathak</h1>
-            <p>"Hello, I'm Vaibhav—an avid coder, freelance enthusiast, and podcast host."</p>
-            <button id="aboutMeBtn" class="animated-button popup-button" data-popup-id="aboutMeModal">About Me</button>
-            <button id="contactMeBtn" class="animated-button popup-button" data-popup-id="contactMeModal">Contact Me</button>
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
-            </div>
-        </div>
-    </section>
-    <section class="skills-section dark-theme">
-        <h2>Skills</h2>
-        <div class="skills grid-layout">
-            <div class="skill-block animated-skill">
-                <h3>C++</h3>
-                <button class="know-more c-plus-plus popup-button" data-popup-id="knowMoreModal" data-text="Proficient Coding Skills: Completed a 100-day code challenge on CodeChef.">Know More</button>
-            </div>
-            <div class="skill-block animated-skill">
-                <h3>Python</h3>
-                <button class="know-more python popup-button" data-popup-id="knowMoreModal" data-text="Python Expertise: Acquired proficiency in Python through Harvard University's CS50 course.">Know More</button>
-            </div>
-            <div class="skill-block animated-skill">
-                <h3>Podcaster</h3>
-                <button class="know-more podcaster popup-button" data-popup-id="knowMoreModal" data-text="Host of 'KNOW WITH VAIBHAV' on Spotify.">Know More</button>
-            </div>
-        </div>
-    </section>
-    <section class="projects-section timeline">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card animated-project">
-                <h3>Project 1</h3>
-                <p>CREATED THIS PORTFOLIO WEBSITE</p>
-            </div>
-            <div class="project-card animated-project">
-                <h3>Project 2</h3>
-                <p>CREATED A TELEGRAM BOT</p>
-            </div>
-            <div class="project-card animated-project">
-                <h3>Project 3</h3>
-                <p>COMING SOON</p>
-            </div>
-        </div>
-    </section>
-    <section class="why-hire-me-section dramatic">
-        <h2>Why You Should Hire Me</h2>
-        <ul>
-            <li>Expertise in Coding</li>
-            <li>Effective Communicator.</li>
-            <li>Love for Challenges.</li>
-            <li>Confidence and Commitment.</li>
-        </ul>
-    </section>
-    <section class="services-section dark-theme">
-        <h2>Services I Provide</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Programming</h3>
-                <p> Harnessing my expertise in programming languages and frameworks, I develop tailored solutions that streamline processes and enhance functionality.</p>
-            </div>
-            <div class="service">
-                <h3>Video Editing</h3>
-                <p>With a keen eye for detail and storytelling, I transform raw footage into compelling narratives.</p>
-            </div>
-            <div class="service">
-                <h3>Voice Over</h3>
-                <p> Leveraging a versatile vocal range and expressive delivery, I provide professional voiceover services for commercials, narrations, tutorials, and more.</p>
-            </div>
-        </div>
-    </section>
-    <section class="achievements-section dark-theme">
-        <h2>Achievements</h2>
-        <p> GOT THESE BADGES FROM CODECHEF, FOR MAINTAINING THE CONTINIOUS CODING STREAKS OF 25 DAYS , 50 DAYS AND 100 DAYS..</p>
-        <div class="achievements">
-            <div class="achievement">
-                <img src="https://i.ibb.co/JtVrHVg/Screenshot-2024-06-27-202446.png" alt="Screenshot-2024-06-27-202446">
-            </div>
-            <div class="achievement">
-                <img src="https://i.ibb.co/bXzxGrC/Screenshot-2024-06-27-202505.png" alt="Screenshot-2024-06-27-202505">
-            </div>
-            <div class="achievement">
-                <img src="https://i.ibb.co/31ZmR7W/Screenshot-2024-06-27-202413.png" alt="Screenshot-2024-06-27-202413">
-            </div>
-        </div>
-    </section>
-    <section class="work-together-section">
-        <h2>Let's Work Together</h2>
-        <a href="https://www.linkedin.com/in/vaibhav-pathak-8b8991214/" target="_blank" class="animated-linkedin-button">Connect on LinkedIn</a>
-        <a href="https://open.spotify.com/show/50pBETQfYMLg73z4TaPCMT?si=8hmv-SCyQMOaQXNKIneKkg&utm_source=copy-link" target="_blank" class="animated-podcast-button">Listen to My Podcast</a>
-    </section>
-    <footer>
-        <div class="footer-content">
-            <p>Email me at - pathakvaibhav755@gmail.com</p>
-            <p>2024 Vaibhav's Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
-    <div id="aboutMeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Hey there! Vaibhav here, in the zone. I'm a full-time tech enthusiast, currently elbow-deep in code.</p>
-        </div>
-    </div>
-    <div id="contactMeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form id="contactForm">
-                <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/myzgzykq"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-        </div>
-    </div>
-    <div id="knowMoreModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="knowMoreText">Here is some more information.</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="background-3d"></div>
+  <header></header>
+  <section class="hero">
+    <div class="container">
+      <div id="3d-container"></div>
+      <h1 class="animated-intro neon-text" id="animated-name">I'm Vaibhav Pathak</h1>
+      <p>"Hello, I'm Vaibhav—an avid coder, freelance enthusiast, and podcast host."</p>
+      <button id="aboutMeBtn" class="animated-button popup-button" data-popup-id="aboutMeModal">About Me</button>
+      <button id="contactMeBtn" class="animated-button popup-button" data-popup-id="contactMeModal">Contact Me</button>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-section dark-theme">
+    <h2>Skills</h2>
+    <div class="skills grid-layout">
+      <div class="skill-block animated-skill">
+        <h3>C++</h3>
+        <button class="know-more c-plus-plus popup-button" data-popup-id="knowMoreModal" data-text="Proficient Coding Skills: Completed a 100-day code challenge on CodeChef.">Know More</button>
+      </div>
+      <div class="skill-block animated-skill">
+        <h3>Python</h3>
+        <button class="know-more python popup-button" data-popup-id="knowMoreModal" data-text="Python Expertise: Acquired proficiency in Python through Harvard University's CS50 course.">Know More</button>
+      </div>
+      <div class="skill-block animated-skill">
+        <h3>Podcaster</h3>
+        <button class="know-more podcaster popup-button" data-popup-id="knowMoreModal" data-text="Host of 'KNOW WITH VAIBHAV' on Spotify.">Know More</button>
+      </div>
+    </div>
+  </section>
+  <section class="projects-section timeline">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card animated-project">
+        <h3>Project 1</h3>
+        <p>CREATED THIS PORTFOLIO WEBSITE</p>
+      </div>
+      <div class="project-card animated-project">
+        <h3>Project 2</h3>
+        <p>CREATED A TELEGRAM BOT</p>
+      </div>
+      <div class="project-card animated-project">
+        <h3>Project 3</h3>
+        <p>COMING SOON</p>
+      </div>
+    </div>
+  </section>
+  <section class="why-hire-me-section dramatic">
+    <h2>Why You Should Hire Me</h2>
+    <ul>
+      <li>Expertise in Coding</li>
+      <li>Effective Communicator.</li>
+      <li>Love for Challenges.</li>
+      <li>Confidence and Commitment.</li>
+    </ul>
+  </section>
+  <section class="services-section dark-theme">
+    <h2>Services I Provide</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Programming</h3>
+        <p> Harnessing my expertise in programming languages and frameworks, I develop tailored solutions that streamline processes and enhance functionality.</p>
+      </div>
+      <div class="service">
+        <h3>Video Editing</h3>
+        <p>With a keen eye for detail and storytelling, I transform raw footage into compelling narratives.</p>
+      </div>
+      <div class="service">
+        <h3>Voice Over</h3>
+        <p> Leveraging a versatile vocal range and expressive delivery, I provide professional voiceover services for commercials, narrations, tutorials, and more.</p>
+      </div>
+    </div>
+  </section>
+  <section class="achievements-section dark-theme">
+    <h2>Achievements</h2>
+    <p> GOT THESE BADGES FROM CODECHEF, FOR MAINTAINING THE CONTINIOUS CODING STREAKS OF 25 DAYS , 50 DAYS AND 100 DAYS..</p>
+    <div class="achievements">
+      <div class="achievement">
+        <img src="https://i.ibb.co/JtVrHVg/Screenshot-2024-06-27-202446.png" alt="Screenshot-2024-06-27-202446">
+      </div>
+      <div class="achievement">
+        <img src="https://i.ibb.co/bXzxGrC/Screenshot-2024-06-27-202505.png" alt="Screenshot-2024-06-27-202505">
+      </div>
+      <div class="achievement">
+        <img src="https://i.ibb.co/31ZmR7W/Screenshot-2024-06-27-202413.png" alt="Screenshot-2024-06-27-202413">
+      </div>
+    </div>
+  </section>
+  <section class="work-together-section">
+    <h2>Let's Work Together</h2>
+    <a href="https://www.linkedin.com/in/vaibhav-pathak-8b8991214/" target="_blank" class="animated-linkedin-button">Connect on LinkedIn</a>
+    <a href="https://open.spotify.com/show/50pBETQfYMLg73z4TaPCMT?si=8hmv-SCyQMOaQXNKIneKkg&utm_source=copy-link" target="_blank" class="animated-podcast-button">Listen to My Podcast</a>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p>Email me at - pathakvaibhav755@gmail.com</p>
+      <p>2024 Vaibhav's Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <div id="aboutMeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Hey there! Vaibhav here, in the zone. I'm a full-time tech enthusiast, currently elbow-deep in code.</p>
+    </div>
+  </div>
+  <div id="contactMeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <div id="knowMoreModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="knowMoreText">Here is some more information.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

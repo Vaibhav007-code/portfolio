@@ -61,4 +61,56 @@ document.addEventListener('DOMContentLoaded', () => {
             podcastButton.classList.remove('animated');
         });
     }
+
+    // Handle color switch
+    const colorSwitchButton = document.getElementById('colorSwitch');
+    colorSwitchButton.addEventListener('click', () => {
+        document.body.classList.toggle('duotone');
+    });
+
+    // Progress bar
+    const progress = document.getElementById('progress');
+    let width = 0;
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+        } else {
+            width++;
+            progress.style.width = width + '%';
+        }
+    }, 100);
+
+    // Animated Character Guide (Mascot)
+    const mascot = document.createElement('div');
+    mascot.classList.add('mascot');
+    mascot.innerHTML = '<img src="mascot.png" alt="Mascot">';
+    document.body.appendChild(mascot);
+
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        fetch('https://formspree.io/f/myzgzykq', {  // Updated with your actual Formspree form ID
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            })
+        }).then(response => {
+            if (response.ok) {
+                alert('Message sent successfully!');
+                contactForm.reset();
+            } else {
+                alert('Failed to send message.');
+            }
+        });
+    });
 });

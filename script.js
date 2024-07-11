@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modals = document.querySelectorAll('.modal');
     const popupButtons = document.querySelectorAll('.popup-button');
     const closeButtons = document.querySelectorAll('.close');
+    const wordsFromMeAudio = document.getElementById('wordsFromMeAudio');
+    const pauseAudioBtn = document.getElementById('pauseAudioBtn');
 
     // Handle popup button clicks
     popupButtons.forEach(button => {
@@ -116,26 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Play/pause audio on image hover
     const wordsFromMeImage = document.getElementById('wordsFromMeImage');
-    const wordsFromMeAudio = document.getElementById('wordsFromMeAudio');
-    const pauseAudioBtn = document.getElementById('pauseAudioBtn');
-
-    // Play audio by default when the page loads
-    if (wordsFromMeAudio) {
-        wordsFromMeAudio.play();
-    }
-
-    // Pause audio when the pause button is clicked
-    if (pauseAudioBtn) {
-        pauseAudioBtn.addEventListener('click', () => {
-            if (wordsFromMeAudio.paused) {
-                wordsFromMeAudio.play();
-                pauseAudioBtn.textContent = 'Pause';
-            } else {
-                wordsFromMeAudio.pause();
-                pauseAudioBtn.textContent = 'Play';
-            }
-        });
-    }
 
     if (wordsFromMeImage && wordsFromMeAudio) {
         wordsFromMeImage.addEventListener('mouseover', () => {
@@ -144,6 +126,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         wordsFromMeImage.addEventListener('mouseout', () => {
             wordsFromMeAudio.pause();
+        });
+    }
+
+    // Play audio by default when the page loads
+    if (wordsFromMeAudio) {
+        wordsFromMeAudio.play().catch(error => {
+            console.log('Autoplay failed:', error);
+        });
+
+        pauseAudioBtn.addEventListener('click', () => {
+            if (!wordsFromMeAudio.paused) {
+                wordsFromMeAudio.pause();
+                pauseAudioBtn.textContent = 'Play';
+            } else {
+                wordsFromMeAudio.play();
+                pauseAudioBtn.textContent = 'Pause';
+            }
         });
     }
 });

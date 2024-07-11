@@ -117,17 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Play audio on button click
+    // Play and pause audio on button click
     playAudioBtn.addEventListener('click', () => {
         wordsFromMeAudio.play();
-        playAudioBtn.style.display = 'none';
-        pauseAudioBtn.style.display = 'inline-block';
     });
 
-    // Pause audio on button click
     pauseAudioBtn.addEventListener('click', () => {
         wordsFromMeAudio.pause();
-        playAudioBtn.style.display = 'inline-block';
-        pauseAudioBtn.style.display = 'none';
     });
 });

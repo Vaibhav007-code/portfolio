@@ -34,7 +34,7 @@ button:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+    background: #011526;
     color: #FFFFFF;
     padding: 100px 0;
     position: relative;
@@ -78,7 +78,7 @@ button:hover {
 /* Skills Section */
 .skills-section {
     text-align: center;
-    background: #ADBC9F;
+    background: #500711;
     padding: 50px 0;
 }
 
@@ -129,8 +129,8 @@ button:hover {
 /* Projects Section */
 .projects-section {
     padding: 50px 0;
-    background: #FAF9F6;
-    color: #000000;
+    background: #0490839;
+    color: #F94500;
 }
 
 .projects-section h2 {

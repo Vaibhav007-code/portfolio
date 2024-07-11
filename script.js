@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupButtons = document.querySelectorAll('.popup-button');
     const closeButtons = document.querySelectorAll('.close');
     const wordsFromMeAudio = document.getElementById('wordsFromMeAudio');
+    const playAudioBtn = document.getElementById('playAudioBtn');
     const pauseAudioBtn = document.getElementById('pauseAudioBtn');
 
     // Handle popup button clicks
@@ -116,33 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Play/pause audio on image hover
-    const wordsFromMeImage = document.getElementById('wordsFromMeImage');
+    // Play audio on button click
+    playAudioBtn.addEventListener('click', () => {
+        wordsFromMeAudio.play();
+        playAudioBtn.style.display = 'none';
+        pauseAudioBtn.style.display = 'inline-block';
+    });
 
-    if (wordsFromMeImage && wordsFromMeAudio) {
-        wordsFromMeImage.addEventListener('mouseover', () => {
-            wordsFromMeAudio.play();
-        });
-
-        wordsFromMeImage.addEventListener('mouseout', () => {
-            wordsFromMeAudio.pause();
-        });
-    }
-
-    // Play audio by default when the page loads
-    if (wordsFromMeAudio) {
-        wordsFromMeAudio.play().catch(error => {
-            console.log('Autoplay failed:', error);
-        });
-
-        pauseAudioBtn.addEventListener('click', () => {
-            if (!wordsFromMeAudio.paused) {
-                wordsFromMeAudio.pause();
-                pauseAudioBtn.textContent = 'Play';
-            } else {
-                wordsFromMeAudio.play();
-                pauseAudioBtn.textContent = 'Pause';
-            }
-        });
-    }
+    // Pause audio on button click
+    pauseAudioBtn.addEventListener('click', () => {
+        wordsFromMeAudio.pause();
+        playAudioBtn.style.display = 'inline-block';
+        pauseAudioBtn.style.display = 'none';
+    });
 });

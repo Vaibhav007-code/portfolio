@@ -113,4 +113,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Play/pause audio on image hover
+    const wordsFromMeImage = document.getElementById('wordsFromMeImage');
+    const wordsFromMeAudio = document.getElementById('wordsFromMeAudio');
+
+    if (wordsFromMeImage && wordsFromMeAudio) {
+        wordsFromMeImage.addEventListener('mouseover', () => {
+            wordsFromMeAudio.play();
+        });
+
+        wordsFromMeImage.addEventListener('mouseout', () => {
+            wordsFromMeAudio.pause();
+        });
+    }
 });

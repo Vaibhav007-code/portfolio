@@ -503,3 +503,34 @@ form#contactForm button {
 form#contactForm button:hover {
     background-color: #FF9900;
 }
+/* Add this to your existing CSS file */
+.words-from-me-section {
+    text-align: center;
+    padding: 50px 0;
+    background: #222;
+    color: #fff;
+}
+
+.words-from-me img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.words-from-me audio {
+    display: none;
+}
+
+#pauseAudioBtn {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pauseAudioBtn:hover {
+    background-color: #555;
+}
+

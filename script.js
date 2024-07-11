@@ -117,6 +117,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Play/pause audio on image hover
     const wordsFromMeImage = document.getElementById('wordsFromMeImage');
     const wordsFromMeAudio = document.getElementById('wordsFromMeAudio');
+    const pauseAudioBtn = document.getElementById('pauseAudioBtn');
+
+    // Play audio by default when the page loads
+    if (wordsFromMeAudio) {
+        wordsFromMeAudio.play();
+    }
+
+    // Pause audio when the pause button is clicked
+    if (pauseAudioBtn) {
+        pauseAudioBtn.addEventListener('click', () => {
+            if (wordsFromMeAudio.paused) {
+                wordsFromMeAudio.play();
+                pauseAudioBtn.textContent = 'Pause';
+            } else {
+                wordsFromMeAudio.pause();
+                pauseAudioBtn.textContent = 'Play';
+            }
+        });
+    }
 
     if (wordsFromMeImage && wordsFromMeAudio) {
         wordsFromMeImage.addEventListener('mouseover', () => {

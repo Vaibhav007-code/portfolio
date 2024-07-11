@@ -298,29 +298,27 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.animated-linkedin-button, .animated-podcast-button {
+.linkedin-button,
+.spotify-button {
     display: inline-block;
-    padding: 10px 20px;
+    width: 50px; /* Resize to icon size */
+    height: 50px; /* Resize to icon size */
     margin: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #0077B5; /* LinkedIn */
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-.animated-linkedin-button:hover {
-    background-color: #005582;
-    transform: scale(1.1);
+.linkedin-button img,
+.spotify-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.animated-podcast-button {
-    background-color: #1DB954; /* Spotify */
-}
-
-.animated-podcast-button:hover {
-    background-color: #1AA34A;
-    transform: scale(1.1);
+.linkedin-button:hover,
+.spotify-button:hover {
+    transform: scale(1.1); /* Add animation on hover */
 }
 
 /* Footer Section */
@@ -503,6 +501,7 @@ form#contactForm button {
 form#contactForm button:hover {
     background-color: #FF9900;
 }
+
 /* Add this to your existing CSS file */
 .words-from-me-section {
     text-align: center;
@@ -533,4 +532,3 @@ form#contactForm button:hover {
 #pauseAudioBtn:hover {
     background-color: #555;
 }
-
